@@ -1,10 +1,50 @@
+:root {
+  --color-background: #d0ebff;
+  --color-text: #000;
+
+  --color-brand-primary: 255, 57, 116;
+  --color-brand-primary-light: 34, 139, 230;
+  --color-brand-secondary: 200, 32, 52;
+  --color-brand-secondary-light: 209, 58, 88;
+
+  --color-switch-background: #97b7d1;
+  --color-switch: #ffd43b;
+
+  --color-success: #40c057;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+}
+
+label {
+  font-size: small;
 }
 
 .App-logo {
   height: 40vmin;
-  pointer-events: none;
+  pointer-events: fill;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 0.5rem;
+}
+
+.new-item-container {
+  margin-top: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 1rem;
+  width: 50%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
